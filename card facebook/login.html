@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      body {
+        background-color: rgb(207, 214, 218);
+      }
+      .reg {
+        background-color: rgb(82, 240, 34);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-5">
+          <h1 class="text-center text-primary">facebook</h1>
+          <div class="bg-white shadow rounded p-3 input-group-lg shadow">
+            <h5 class="text-center">Login to Facebook</h5>
+            <input
+              type="email"
+              class="form-control my-3"
+              placeholder="Email or phone number"
+            />
+            <input
+              type="password"
+              class="form-control my-3"
+              placeholder="Password"
+            />
+            <a href="./index.html"
+              ><button class="btn btn-primary w-100 my-3">Log In</button></a
+            >
+            <a href="#" class="text-decoration-none text-center"
+              ><p>Forgotten password?</p></a
+            >
+            <!-- create form -->
+            <hr />
+            <div class="text-center m2-4">
+              <button
+                class="btn btn-lg reg"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#createModal"
+              >
+                Create New Account
+              </button>
+            </div>
+            <!-- create modal -->
+            <div
+              class="modal fade"
+              id="createModal"
+              tabindex="-1"
+              aria-labelledby="createModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <!-- head -->
+                  <div class="modal-header">
+                    <div>
+                      <h2 class="modal-title" id="exampleModalLabel">
+                        Sign Up
+                      </h2>
+                      <span class="text-muted fs-7">It's quick and easy.</span>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <!-- body -->
+                  <div class="modal-body">
+                    <form>
+                      <!-- names -->
+                      <div class="row">
+                        <div class="col">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="First name"
+                          />
+                        </div>
+                        <div class="col">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Surname"
+                          />
+                        </div>
+                      </div>
+                      <!-- email & pass -->
+                      <input
+                        type="email"
+                        class="form-control my-3"
+                        placeholder="Mobile number or email address"
+                      />
+                      <input
+                        type="password"
+                        class="form-control my-3"
+                        placeholder="New password"
+                      />
+                      <!-- DOB -->
+                      <div class="row my-3">
+                        <span class="text-muted fs-7"
+                          >Date of birth
+                          <i
+                            class="fas fa-question-circle"
+                            data-bs-toggle="popover"
+                            type="button"
+                            data-bs-content="And here's some amazing content. It's very engaging. Right?"
+                          ></i
+                        ></span>
+                        <div class="col">
+                          <select class="form-select">
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div class="col">
+                          <select class="form-select">
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div class="col">
+                          <select class="form-select">
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                      <!-- gender -->
+                      <div class="row my-3">
+                        <span class="text-muted fs-7"
+                          >Gender
+                          <i
+                            class="fas fa-question-circle"
+                            data-bs-toggle="popover"
+                            type="button"
+                            data-bs-content="And here's some amazing content. It's very engaging. Right?"
+                          ></i
+                        ></span>
+                        <div class="col">
+                          <div class="border rounded p-2">
+                            <label
+                              class="form-check-label"
+                              for="flexRadioDefault1"
+                              >Male
+                            </label>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="flexRadioDefault1"
+                            />
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="border rounded p-2">
+                            <label
+                              class="form-check-label"
+                              for="flexRadioDefault1"
+                              >Female
+                            </label>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="flexRadioDefault2"
+                            />
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="border rounded p-2">
+                            <label
+                              class="form-check-label"
+                              for="flexRadioDefault1"
+                              >Custom
+                            </label>
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="flexRadioDefault3"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- gender select -->
+                      <div class="d-none" id="genderSelect">
+                        <select class="form-select">
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                        <div class="my-3">
+                          <span class="text-muted fs-7"
+                            >Your pronoun is visible to everyone.</span
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Gender (optional)"
+                          />
+                        </div>
+                      </div>
+                      <!-- disclaimer -->
+                      <div>
+                        <span class="text-muted fs-7"
+                          >By clicking Sign Up, you agree to our Terms, Data
+                          Policy....</span
+                        >
+                      </div>
+                      <!-- btn -->
+                      <div class="text-center mt-3">
+                        <button
+                          type="button"
+                          class="btn btn-success btn-lg"
+                          data-bs-dismiss="modal"
+                        >
+                          Sign Up
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- modal end -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
